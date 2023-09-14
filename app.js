@@ -66,6 +66,23 @@ app.get("/users", (req, res) => {
     },
   ]);
 });
+
+app.get("/serie", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      name: "Até o céu",
+    },
+    {
+      id: 2,
+      name: "Arow",
+    },
+    {
+      id: 3,
+      name: "jovem sheldon",
+    }
+  ]);
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 

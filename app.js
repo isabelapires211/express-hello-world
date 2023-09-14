@@ -22,6 +22,50 @@ app.get('/meunome', (req, res) => {
   res.send('Isabela Pires Oliveira')
 })
 
+app.get("/users", (req, res) => {
+  res.json([
+    {
+      id: 1,
+      name: "Pikachu",
+    },
+    {
+      id: 2,
+      name: "Butterfree",
+    },
+    {
+      id: 3,
+      name: "Pidgeot",
+    },
+    {
+      id: 4,
+      name: "Bulbasaur",
+    },
+    {
+      id: 5,
+      name: "Charizard",
+    },
+    {
+      id: 6,
+      name: "Squirtle",
+    },
+    {
+      id: 7,
+      name: "Kingler",
+    },
+    {
+      id: 8,
+      name: "Primeape",
+    },
+    {
+      id: 9,
+      name: "Muk",
+    },
+    {
+      id: 10,
+      name: "Tauros",
+    },
+  ]);
+});
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
